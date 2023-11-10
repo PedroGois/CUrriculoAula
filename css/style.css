@@ -1,19 +1,17 @@
 /*geral*/
 html, body {
     margin: 0;
-    padding: 0;
+    padding: 0;background-color: #000000;
+}
+.view{
+  height: 900px;
+  display: flex;
+  flex-direction: row;
+  background-color: #000000a1;
+  width: 100%;
+  text-align: center;
 }
 
-
-.card {
-    background-color: #333;
-    color: #fff;
-    width: 80%;
-    margin: 20px auto;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
 
 ul {
     list-style: none;
@@ -25,23 +23,67 @@ ul li {
     margin-right: 10px;
 }
 
+/*Sobre mim*/
+.about-me{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+  
+
+}
+.about-me div {
+  justify-content: space-around;
+  align-items: center;
+  
+}
+.profile-pic {
+  text-align: center;
+  width: 15%;
+  
+}
+
+.profile-pic img {
+  border-color: rgb(255, 0, 0) ;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 50%;
+  margin-top: 25%;
+  width: 100%;
+}
+
+
+.profile-title h1 {
+  font-size: 48px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+
+.description {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+}
 h1 {
-    text-align: center;
+  text-align: center;
 }
-
-h2 {
-    margin-top: 20px;
+p {
+  color: #fff;
 }
-
+.listvert-item1 {
+  text-align: center;
+  color: #f71e1ede;
+}
+.listvert-item2{
+  text-align: center;
+  color: #f71e1ede;
+}
 h3 {
     margin-top: 10px;
 }
-
-p {
-    margin: 0;
-    line-height: 1.5;
-}
-
 a {
     display: block;
     text-align: center;
@@ -82,49 +124,8 @@ body {
  font-size: 18px;
 }
 
-.capa {
-    color: white;
-}
 
-.capa span {
-    color: #f27609;
-    display: block;
-}
 
-.capa div {
-    display: inline-block;
-    height: 650px;
-}
-
-.profile-pic {
-    width: 39%;
-    text-align: center;
-}
-
-.profile-pic img {
-    border-radius: 152px;
-    width: 320px;
-    margin-top: 100px;
-}
-
-.profile-title {
-    vertical-align: top;
-    width: 60%;
-}
-
-.profile-title h1 {
-    margin-top: 200px;
-    font-size: 58px;
-    font-weight: 400;
-    text-transform: uppercase;
-    line-height: 54px;
-}
-
-.profile-title h2 {
-    margin-top: -26px;
-    font-weight: 100;
-    font-size: 16px;
-}
 
 
 /* Estilo celular */
@@ -151,7 +152,7 @@ body {
       margin-top: 20px;
     }
   
-    .profile-title h2 {
+    .profile-title p {
       font-size: 14px; 
     }
     
@@ -177,7 +178,7 @@ body {
       margin-top: 40px;
     }
   
-    .profile-title h2 {
+    .profile-title p {
       font-size: 16px;
     }
   }
@@ -221,3 +222,37 @@ body {
   .menu-list.active {
     right: 8%;
   }
+
+  
+/*Portifolio*/
+.viewportf{
+  height: 900px;
+  display: flex;
+  flex-direction: column;
+  background-color: #000000a1;
+  width: 100%;
+  text-align: center;
+}
+.myprojects{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 80%;
+  height: 70%;
+  margin-right:10% ;
+  margin-left:10% ;
+  background-color: aliceblue;
+} 
+.projectitem{
+  height: 90%;
+  width: 30%;
+  background-color: aqua;
+}
+.projects-title{
+  text-align: center;
+  font-size: 48px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #fff;
+
+}
