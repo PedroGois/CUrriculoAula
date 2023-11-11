@@ -1,258 +1,173 @@
 /*geral*/
-html, body {
-    margin: 0;
-    padding: 0;background-color: #000000;
-}
-.view{
-  height: 900px;
-  display: flex;
-  flex-direction: row;
-  background-color: #000000a1;
-  width: 100%;
-  text-align: center;
-}
 
-
-ul {
-    list-style: none;
-    display: flex;
-    padding: 0;
-}
-
-ul li {
-    margin-right: 10px;
-}
-
-/*Sobre mim*/
-.about-me{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  width: 80%;
-  
-
-}
-.about-me div {
-  justify-content: space-around;
-  align-items: center;
-  
-}
-.profile-pic {
-  text-align: center;
-  width: 15%;
-  
-}
-
-.profile-pic img {
-  border-color: rgb(255, 0, 0) ;
-  border-style: solid;
-  border-width: 2px;
-  border-radius: 50%;
-  margin-top: 25%;
-  width: 100%;
-}
-
-
-.profile-title h1 {
-  font-size: 48px;
-  font-weight: 600;
-  text-transform: uppercase;
-  color: #fff;
-}
-
-
-.description {
-  text-align: center;
-  display: flex;
-  flex-direction: row;
-}
-h1 {
-  text-align: center;
-}
-p {
-  color: #fff;
-}
-.listvert-item1 {
-  text-align: center;
-  color: #f71e1ede;
-}
-.listvert-item2{
-  text-align: center;
-  color: #f71e1ede;
-}
-h3 {
-    margin-top: 10px;
-}
-a {
-    display: block;
-    text-align: center;
-    text-decoration: none;
-    color: #fff;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-
-body {
-    background-color: #2b2b2b;
-    font-family: Montserrat, sans-serif;
-}
-
-.navigation {
-    background-color: #2b2b2b;
-    color: white;
-    height: 56px;
-}
-
-.navigation ul {
-    list-style: none;
-    margin-top: 0;
-    padding: 0;
-    height: 56px;
-    text-align: right;
-}
-
-.navigation li {
- display: inline-block;
- line-height: 56px;
- padding-left: 30px;
- padding-right: 30px;
- font-weight: 100;
- font-size: 18px;
-}
-
-
-
-
-
-/* Estilo celular */
-@media (max-width: 767px) {
-    
-    .capa {
+    html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+    a {
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      color: #fff;
+    }
+    a:hover {
+      color: #ffffffb4;
+      transition: 800ms;
+      
+    }
+    h1 {
       text-align: center;
     }
-  
-    .profile-pic {
+    h4 {
+      color: #fff;
+      font-size: 20px;
+    }
+    p {
+      color: #fff;
+    }
+    ul {
+      list-style: none;
+      display: flex;
+      padding: 0;
+    }
+    
+    body {
+      background-color: rgb(23, 0, 77);
+      font-family: Montserrat, sans-serif;
+    }
+
+/*NavBar*/
+    .navigation {
+      display: flex;
+      flex-direction: row;
+      justify-content: end;
+      color: white;
+      height: 56px;
+      animation-name: navegacao;
+      animation-duration: 4s;
+    }
+
+    .navigation a {
+      font-size: large;
+      font-weight: 400;
+      color: white;
+      text-decoration: none;
+    }
+
+    .navigation a:hover {
+      color: rgb(178, 162, 238)
+    }
+
+    .navigation ul {
+      list-style: none;
+      margin-top: 0;
+      padding: 0;
+      height: 56px;
+      text-align: right;
+    }
+
+    .navigation li {
+    display: inline-block;
+    line-height: 56px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: 100;
+    font-size: 18px;
+    }
+
+    .navigation li.threeline-icon {
+      display: none;
+    }
+    
+    .menuJs {
+        height: auto;
+    }
+
+    .menuJs ul {
+        height: auto;
+        text-align: center;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    .menuJs li {
+        display: block;
+        border-bottom: solid grey 1px;
+        width: 100%;
+        padding: 0;
+    }
+      
+/*content*/
+    .container{
+      height: 90%;
+      display: flex;
+      flex-direction: row;
+      background-color: rgba(0, 0, 0, 0.644);
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /*Sobre mim*/
+    .about-me{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      width: 70%;
+      height: 80%;
+      
+    }
+    
+    .profile-title{
+      margin: 2%;
       width: 100%;
     }
-  
+    .profile-pic {
+      margin: 2%;
+      text-align: center;
+      width: 35%;
+      
+    }
+
     .profile-pic img {
-      width: 80%; 
-    }
-  
-    .profile-title {
+      border-style: solid;
+      border-width: 2px;
+      border-radius: 50%;
+      margin-top: 25%;
       width: 100%;
     }
-  
-    .profile-title h1 {
-      font-size: 36px; 
-      margin-top: 20px;
-    }
-  
-    .profile-title p {
-      font-size: 14px; 
-    }
-    
-  }
 
-  /* Estilo tablet */
-@media (min-width: 768px) and (max-width: 1023px) {
-    
-    .capa {
-      text-align: center;
-    }
-  
-    .profile-pic {
-      width: 50%;
-    }
-  
-    .profile-title {
-      width: 50%;
-    }
-  
+
     .profile-title h1 {
       font-size: 48px;
-      margin-top: 40px;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: #fff;
     }
-  
-    .profile-title p {
-      font-size: 16px;
+    .description {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: start;
+      padding: 0;
+      width: 100%;
     }
-  }
-
-/* Estilo ícone  menu */
-.menu-icon {
-  
-    background-color: #2b2b2b;
-    color: white;
-    cursor: pointer;
-    text-align: center;
-    padding: 10px;
-    font-size: 24px;
-    position: fixed;
-    right: 2%;
-    top: 0;
-  }
-  
-  /* Estilo lista de itens menu */
-  .menu-list {
-    list-style: none;
-    padding: 0;
-    position: fixed;
-    top: 0;
-    right: -250px; /* Ocultar o menu lateral inicialmente */
-    background-color: #2b2b2b;
-    height: 100%;
-
-    transition: right 0.3s;
-    display: block;
-    
-  }
-  
-  .menu-list li {
-    padding: 10px;
-    text-align: center;
-    display: block;
-  }
-  
-  /* Estilos para mostrar o menu lateral quando ativado */
-  .menu-list.active {
-    right: 8%;
-  }
-
-  
-/*Portifolio*/
-.viewportf{
-  height: 900px;
-  display: flex;
-  flex-direction: column;
-  background-color: #000000a1;
-  width: 100%;
-  text-align: center;
-}
-.myprojects{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  width: 80%;
-  height: 70%;
-  margin-right:10% ;
-  margin-left:10% ;
-  background-color: aliceblue;
-} 
-.projectitem{
-  height: 90%;
-  width: 30%;
-  background-color: aqua;
-}
-.projects-title{
-  text-align: center;
-  font-size: 48px;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: #fff;
-
-}
+    .descitem{
+      display: flex;
+    }
+    .listvert {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      height: 100%;
+      margin-top: 0;
+      margin-bottom: 0;
+      padding: 0 5px 0 5px;
+    }
+    .listvert-item {
+      font-size: x-large;
+      text-align: center;
+      color: rgb(178, 162, 238);
+    }

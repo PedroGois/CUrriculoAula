@@ -1,8 +1,11 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const menuIcon = document.getElementById('menuIcon');
-    const menuList = document.getElementById('menuList');
-  
-    menuIcon.addEventListener('click', function () {
-      menuList.classList.toggle('active');
-    });
-  });
+function openNav() {
+  var x = document.getElementById("navigation");
+
+  if (x.className === "navigation") {
+      x.className += " menuJs";  
+      document.getElementById("threeline-icon").innerHTML = "&Cross;";
+  } else {
+      x.className = "navigation";
+      document.getElementById("threeline-icon").innerHTML = "&#9776;";
+  }
+}

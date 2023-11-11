@@ -10,32 +10,37 @@
 		<script src="js/main.js"></script>
 	</head>
 	<body>
-		<div class="navigation">
-			<div class="menu-icon" id="menuIcon">&#9776;</div> 
-			<ul class="menu-list" id="menuList">
-				<a href="portfolio.html"><li>Portfolio</li></a>
-				<a href="curriculo.html"><li>Curriculo</li></a>
-				<a href="curriculo.html"><li>Contato</li></a>
+		<!-- NavBar -->
+		<div id="navigation" class="navigation">
+			<ul>
+				
+				<li><a href="portfolio.html">Portfolio</a></li>
+				<li><a href="curriculo.html">Curriculo</a></li>
+				<li><a href="contato.html">Contato</a></li>
+				<li id="threeline-icon" class="threeline-icon" onclick="openNav()">&#9776;</li>
 			</ul>
 		</div>
-		<div class="view">
-			
-			
-			
+
+		<div class="container">
 			<!-- sobre mim -->
-			<div class="about-me">
-				
+			<div class="about-me">				
 				<div class="profile-pic">
 					<img src="img/pedro.jpg" alt="Pedro Gois" />
 				</div>
 				<div class="profile-title">
 					<h1 id="myname">Pedro Gois</h1>
-					<p class="description">
-						Desenvolvedor <span class="listvert"><ul><li class="listvert-item1">Front End JavaScript</li><li class="listvert-item2">BootStrap</li></ul></span>
+					<div class="description">
+						<div style="color: white; font-size: x-large;" class="descitem">Dev. Front End : </div>
+						<div class="descitem">
+							<ul class="listvert">
+								<li class="listvert-item"> JavaScript</li>
+								<li class="listvert-item"> BootStrap</li>
+							</ul>
+						</div>
 					</p>
 				</div>
 			</div>
-
 		</div>
+
 	</body>
 </html>
