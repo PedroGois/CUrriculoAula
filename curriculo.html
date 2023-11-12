@@ -1,83 +1,81 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <title>Currículo - Pedro</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-    <div class="navigation">
-        <ul>
-            <li>Home</li>
-            <li>Portfolio</li>
-            <li>Contato</li>
-        </ul>
-    </div>
-
-    <h1>Currículo</h1>
-
-    <div class="section">
-        <h2>Dados Pessoais</h2>
-
-        <h3>Nome:</h3>
-        <p>Pedro Gois</p>
-
-        <h3>Data de Nascimento:</h3>
-        <p>10/07/2002</p>
-
-        <h3>Residência:</h3>
-        <p>Itapetininga, SP, Brasil</p>
-
-        <h3>Idiomas:</h3>
-        <p>Português (Nativo)</p>
-        <p>Inglês</p>
-        <p>Espanhol</p>
-    </div>
-
-        <div class="section">
-            <h2>Sobre Mim</h2>
-            <p>Sou um técnico em informática, que se encantou pela tecnologia quando pequeno e me encontrei no desenvolvimento front end mais tarde, ao me deparar com o mercado de tecnologia.</p>
-            <p>Sou músico e compositor em meu tempo livre, o jogo de palavras e batidas misturadas com melodias, é algo que me encanta e por vezes me inspira ao desenvolver um novo design.</p>
+	<head>
+		<title>Pedro Gois - Sobre</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&display=swap" rel="stylesheet">
+		<script src="js/main.js"></script>
+	</head>
+	<body>
+		<!-- NavBar -->
+		<div id="navigation" class="navigation">
+			<ul>
+				
+				<li><a href="portfolio.html">Portfolio</a></li>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="contato.html">Contato</a></li>
+				<li id="threeline-icon" class="threeline-icon" onclick="openNav()">&#9776;</li>
+			</ul>
+		</div>
+        <div class="container-height-auto"> 
+            <div class="personaldata">
+                <h2>Dados Pessoais</h2>
+                <br>
+                <p>Nome: Pedro Henrique Morais de Gois  |  Data de Nascimento: 10/07/2002</p>
+                <p>Residência: Itapetininga, SP, Brasil</p>
+                <p>Idiomas : Português (Nativo)  |  Inglês  |  Espanhol</p>
+            </div>
+            <hr>
+            <div class="bio">
+                <h2>Sobre Mim</h2>
+                <br>
+                <p>Sou um técnico em informática, que se encantou pela tecnologia quando pequeno e me encontrei no desenvolvimento front end mais tarde, ao me deparar com o mercado de tecnologia.</p>
+                <p>Sou músico e compositor em meu tempo livre, o jogo de palavras e batidas misturadas com melodias, é algo que me encanta e por vezes me inspira ao desenvolver um novo design.</p>
+            </div>
+            <hr>
+            <div class="qualification">
+                <h2>Educação</h2>
+                <h3>Em andamento</h3>
+                <p>Tecnólogo em Análise e Desenvolvimento de Sistemas - Fatec Itapetininga</p>
+                <h3>Concluído - Dezembro/2020</h3>
+                <p>Técnico em Informática Integrado ao Ensino Médio - IFSP - Itapetininga</p>
+            </div>
+            <hr>
+            <div class="habilities">
+                <h2>Habilidades</h2>
+                <h3>Comunicação</h3>
+                <p>Procuro manter boa comunicação com a equipe e gosto de perguntar sobre conhecimentos dos demais para adquirir e se possível compartilhar com os mesmos</p>
+                <h3>Lógica</h3>
+                <p>Acredito que toda solução demanda de uma lógica bem construída, afim de agilizar o processo ou também evitar erros por parte do usuário</p>
+                <h3>Suporte ao Cliente</h3>
+                <p>Durante minha carreira no mercado sempre atuei com suporte, em manutenção de computadores e auxílio em utilização de sistemas, em uma das experiências de trabalho atuei com atendente, então a conversa com clientes é algo confortável para mim caso necessário</p>
+                <h3>Criatividade</h3>
+                <p>Gosto de criar designs diferentes explorando as possibilidades de criação, mas consigo abstrair ideias já prontas de design para desenvolvimento</p>
+            </div>
+            <hr>
+            <div class="experience">
+                <h2>Experiência de Trabalho</h2>
+                <h3>Julho/2020 - Dezembro/2020</h3>
+                <p>Estagiário - Suporte aos utilizadores do sistema SVSA - Prefeitura Municipal Itapetininga</p>
+                <h3>Maio/2022 - Outubro/2022</h3>
+                <p>Estagiário - Manutenção TI da Prefeitura - Prefeitura Municipal Itapetininga</p>
+            </div>
+            <hr>
+            <div class="contact">
+                <h2>Contato</h2>
+                <p>pedromorais.gois@gmail.com</p>
+                <p>15998313957</p>
+            </div>
+            <br>
+            <a href="index.html ">Voltar ao início</a>
+            <br>
         </div>
+   
 
-        <div class="section">
-            <h2>Educação</h2>
-            <h3>Em andamento</h3>
-            <p>Tecnólogo em Análise e Desenvolvimento de Sistemas - Fatec Itapetininga</p>
-            <h3>Concluído - Dezembro/2020</h3>
-            <p>Técnico em Informática Integrado ao Ensino Médio - IFSP - Itapetininga</p>
-        </div>
-
-        <div class="section">
-            <h2>Habilidades</h2>
-            <h3>Comunicação</h3>
-            <p>Procuro manter boa comunicação com a equipe e gosto de perguntar sobre conhecimentos dos demais para adquirir e se possível compartilhar com os mesmos</p>
-            <h3>Lógica</h3>
-            <p>Acredito que toda solução demanda de uma lógica bem construída, afim de agilizar o processo ou também evitar erros por parte do usuário</p>
-            <h3>Suporte ao Cliente</h3>
-            <p>Durante minha carreira no mercado sempre atuei com suporte, em manutenção de computadores e auxílio em utilização de sistemas, em uma das experiências de trabalho atuei com atendente, então a conversa com clientes é algo confortável para mim caso necessário</p>
-            <h3>Criatividade</h3>
-            <p>Gosto de criar designs diferentes explorando as possibilidades de criação, mas consigo abstrair ideias já prontas de design para desenvolvimento</p>
-        </div>
-
-        <div class="section">
-            <h2>Experiência de Trabalho</h2>
-            <h3>Julho/2020 - Dezembro/2020</h3>
-            <p>Estagiário - Suporte aos utilizadores do sistema SVSA - Prefeitura Municipal Itapetininga</p>
-            <h3>Maio/2022 - Outubro/2022</h3>
-            <p>Estagiário - Manutenção TI da Prefeitura - Prefeitura Municipal Itapetininga</p>
-        </div>
-
-        <div class="section">
-            <h2>Contato</h2>
-            <p>pedromorais.gois@gmail.com</p>
-            <p>15998313957</p>
-        </div>
-
-        <a href="index.html ">Voltar ao início</a>
-    </div>
+        
 </body>
 
 </html>
