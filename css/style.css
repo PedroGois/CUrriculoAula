@@ -195,4 +195,9 @@
       padding: 0 5% 0 5%;
     }
     
-    
+    .container-height-auto div h2 {
+      color: rgb(178, 162, 238);
+    }
+    .container-height-auto div h3 {
+      color: rgb(178, 162, 238);
+    }
