@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Pedro Gois - Portfolio</title>
+		<title>Pedro Gois - Sobre</title>
 		<meta charset="utf-8" />
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,24 +10,48 @@
 		<script src="js/main.js"></script>
 	</head>
 	<body>
-		<div class="navigation">
-			<div class="menu-icon" id="menuIcon">&#9776;</div> 
-			<ul class="menu-list" id="menuList">
-				<a href="index.html"><li>Sobre Mim</li></a>
-				<a href="curriculo.html"><li>Curriculo</li></a>
-				<a href="curriculo.html"><li>Contato</li></a>
+		<!-- NavBar -->
+		<div id="navigation" class="navigation">
+			<ul>
+				
+				<li><a href="curriculo.html">Currículo</a></li>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="contato.html">Contato</a></li>
+				<li id="threeline-icon" class="threeline-icon" onclick="openNav()">&#9776;</li>
 			</ul>
 		</div>
-		<div class="viewportf">
-		
-            <!-- projetos -->
-             
-            <div class="projects-title">Projetos</div>       
-            <div class="myprojects">
-                <div class="projectitem">text</div>
-                <div class="projectitem">text2</div>
-                <div class="projectitem">text3</div>
-            </div>
-		</div>
-	</body>
+        <div class="container-height-auto"> 
+			<div class="container-project">
+				<div class="project">
+					<div class="projectimg"><img src="./img/projects/project1.jpg" alt="80FLIX Filme principal"></div>
+					<h3>80 FLIX</h3>
+					<p>Desenvolvido como treino de html e css durante os estudos</p>
+				</div>
+				
+				<div class="project">
+					<div class="projectimg"><img src="./img/projects/project2.jpg" alt="Projeto 2"></div>
+					<h3>Projeto 2</h3>
+					<p>Descrição do Projeto 2</p>
+				</div>
+
+				<div class="project">
+					<div class="projectimg"><img src="./img/projects/project2.jpg" alt="Projeto 2"></div>
+					<h3>Projeto 2</h3>
+					<p>Descrição do Projeto 2</p>
+				</div>
+				
+				<div class="project">
+					<div class="projectimg"><img src="./img/projects/project2.jpg" alt="Projeto 2"></div>
+					<h3>Projeto 2</h3>
+					<p>Descrição do Projeto 2</p>
+				</div>
+				
+				
+			</div>  
+        </div>
+   
+
+        
+</body>
+
 </html>
