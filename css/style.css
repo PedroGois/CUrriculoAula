@@ -198,6 +198,8 @@
 
 .container-project{
   display: flex;
+  flex-wrap: wrap;
+  
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
@@ -209,7 +211,8 @@
   padding-top: 0;
   height: 350px;
   width: 20%;
-  overflow: hidden; 
+  overflow: hidden;
+  flex: 0 0 calc(33.33% - 20px); 
 
 }
 .projectimg{
